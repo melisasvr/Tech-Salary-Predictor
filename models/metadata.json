@@ -1,0 +1,46 @@
+{
+  "model_name": "XGBoost",
+  "feature_cols": [
+    "role_enc",
+    "location_enc",
+    "education_enc",
+    "company_tier_enc",
+    "yoe_bucket_enc",
+    "years_of_experience",
+    "seniority_level",
+    "is_faang",
+    "is_big_tech",
+    "remote_work"
+  ],
+  "cv_results": {
+    "GradientBoosting": {
+      "cv_r2_mean": 0.9245,
+      "cv_r2_std": 0.0046
+    },
+    "RandomForest": {
+      "cv_r2_mean": 0.8865,
+      "cv_r2_std": 0.0042
+    },
+    "XGBoost": {
+      "cv_r2_mean": 0.9255,
+      "cv_r2_std": 0.0042
+    }
+  },
+  "test_metrics": {
+    "r2": 0.9206,
+    "mae": 24608.52,
+    "mape": 7.86
+  },
+  "feature_importances": {
+    "role_enc": 0.05407069995999336,
+    "location_enc": 0.0497075617313385,
+    "education_enc": 0.006974414922297001,
+    "company_tier_enc": 0.04744202271103859,
+    "yoe_bucket_enc": 0.02072436921298504,
+    "years_of_experience": 0.02957289293408394,
+    "seniority_level": 0.2059830129146576,
+    "is_faang": 0.10898837447166443,
+    "is_big_tech": 0.47434261441230774,
+    "remote_work": 0.002194065833464265
+  }
+}
